@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5 !important;
+}
+/* login Page */
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin: 150px auto;
+    width: 980px;
+}
+
+.facebook{
+    margin-top: 80px;
+}
+
+.facebook h1{
+    font-size: 68px;
+    font-weight: 700;
+    color: #0066ff;
+}
+
+.facebook p{
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 450;
+}
+
+.login-box{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    width: 800px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login-box input{
+    width: 350px;
+    height: 50px;
+}
+
+.login-box .login-button{
+    width: 350px;
+    font-size: 24px;
+    font-weight: 500;
+    padding: auto;
+    margin-bottom: 20px;
+}
+
+
+.login-box a{
+    color: #0066ff;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.login-box .btn-success{
+    background-color: #1db100;
+    outline: none !important;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.login-box .btn-success:hover{
+    background-color: #1b9901 !important;
+}
+
+/* Sign Up Page */
+
+.modal-header{
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+
+.modal-header h1{
+    font-size: 32px !important;
+    font-weight: 700 !important;
+}
+
+.modal-header h2{
+    font-size: 15px !important;
+}
+
+.modal-header button{
+    position: absolute;
+    right: 17px;
+}
+
+.signup-names{
+    display: flex !important;
+}
+
+.modal-body .signup-names .first-name{
+    width: 220px;
+    margin-right: 20px;
+}
+
+.modal-body .signup-names .sur-name{
+    width: 220px;
+}
+
+.modal-body .form-control{
+    height: 40px;
+}
+
+.modal-body .mob-or-email{
+    width: 460px;
+}
+
+.modal-body .new-password{
+    width: 460px;
+}
+
+.dropdown-menu.show {
+   height: 200px;
+   overflow-x: scroll;
+}
+
+.dob{
+    font-size: 12px;
+}
+
+.dropdown{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+}
+
+.dropdown button{
+    width: 150px;
+    background-color: transparent !important;
+    color: black;
+    text-align: start;
+}
+
+.dropdown button:hover{
+    color: grey !important;
+}
+
+.modal-footer{
+    justify-content: center !important;
+}
+
+.modal-footer button{
+    width: 200px;
+    height: 50px;
+}
+
+.privacy-policy p{
+    font-size: 12px;
+}
+
+.privacy-policy {
+    width: 470px;
+    margin: 0 auto;
+}
+
+.privacy-policy span a{
+    color: #26508f;
+}
+
+.privacy-policy span a:hover{
+    text-decoration: underline;
+}
+
+.all-gender{
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-gender span{
+    display: flex;
+    width: 100px;
+    height: 20px;
+}
+
+.all-gender span input{
+    height: 15px;
+    margin-top: 5px;
+}
