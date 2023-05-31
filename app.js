@@ -5,6 +5,13 @@ const surName = document.querySelector('#recipient-surname')
 const mobNum = document.querySelector('#recipient-mobile')
 const password = document.querySelector('#recipient-pass')
 const email = document.querySelector('#recipient-email')
+const allDates = document.querySelector('#allDates')
+const allMonths = document.querySelector('#allMonths')
+const allYears = document.querySelector('#allYears')
+const whatisgender = document.getElementsByName('sex')
+// const maleGender = document.querySelector('#maleGender')
+// const femaleGender = document.querySelector('#femaleGender')
+// const customGender = document.querySelector('#customGender')
 
 
 const loginBtn = document.querySelector('#login')
@@ -15,12 +22,15 @@ let month;
 let year;
 let gender;
 
+
+
 const users = JSON.parse(localStorage.getItem('users')) || []
 
 console.log(users)
 
 loginBtn.addEventListener('click', loginHandler)
 signupBtn.addEventListener('click', signupHandler)
+signupBtn.addEventListener('click', getGenderHandler)
 
 function loginHandler(){
     console.log(loginEmail.value);
@@ -54,6 +64,7 @@ function loginHandler(){
     }
 }
 
+
 function signupHandler(){
 
     console.log("user email in our input", email.value);
@@ -76,9 +87,18 @@ function signupHandler(){
 
     console.log(modal);
 
+    console.log(firstName.value);
+    console.log(surName.value);
+    console.log(mobNum.value);
+    console.log(password.value);
+    console.log(allDates.value);
+    console.log(allMonths.value);
+    console.log(allYears.value);
+    console.log(gender);
     
 
-    if (firstName.value !== "" && surName.value !== "" && mobNum.value !== "" && password.value !== "" && date !== undefined && month !== undefined && year !== undefined && gender !== undefined){
+
+    if (firstName.value !== "" && surName.value !== "" && mobNum.value !== "" && password.value !== "" && allDates !== undefined && allMonths !== undefined && allYears !== undefined && gender !== undefined){
         if (password.value.length < 8) return alert("password should contain 8 characters")
 
         const userObj = {

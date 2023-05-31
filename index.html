@@ -78,7 +78,7 @@
                 </form>
                 <p class="dob">Date Of Birth</p>
                 <div class="dropdown">
-                  <select class="form-select" aria-label="Default select example">
+                  <select class="form-select" aria-label="Default select example" id="allDates">
                     <option selected>Date</option>
                     <option onclick="getDateHandler(1)" value="1">1</option>
                     <option onclick="getDateHandler(2)" value="2">2</option>
@@ -112,7 +112,7 @@
                     <option onclick="getDateHandler(30)" value="30">30</option>
                     <option onclick="getDateHandler(31)" value="31">31</option>
                   </select>
-                  <select class="form-select" aria-label="Default select example">
+                  <select class="form-select" aria-label="Default select example" id="allMonths">
                     <option selected>Month</option>
                     <option onclick="getMonthHandler(January)" value="January">January</option>
                     <option onclick="getMonthHandler(February)" value="February">February</option>
@@ -127,7 +127,7 @@
                     <option onclick="getMonthHandler(November)" value="November">November</option>
                     <option onclick="getMonthHandler(December)" value="December">December</option>
                   </select>
-                  <select class="form-select" aria-label="Default select example">
+                  <select class="form-select" aria-label="Default select example" id="allYears">
                     <option selected>Year</option>
                     <option onclick="getYearHandler(1980)" value="1980">1980</option>
                     <option onclick="getYearHandler(1981)" value="1981">1981</option>
@@ -165,16 +165,16 @@
                 <p class="dob">Gender</p>
                 <div class="all-gender">
                 <span class="male-radio">
-                  <label for="Male">Male</label>
-                  <input type="radio" class="radio-button" value="1" name="sex">
+                  <label for="Male" id="maleGender">Male</label>
+                  <input type="radio" class="radio-button" value="Male" name="sex " onclick="getGenderHandler('Male')">
                 </span>
                 <span class="fe-male-radio">
-                  <label for="Female">Female</label>
-                  <input type="radio" class="radio-button" value="2" name="sex">
+                  <label for="Female" id="femaleGander">Female</label>
+                  <input type="radio" class="radio-button" value="Female" name="sex" onclick="getGenderHandler('Female')">
                 </span>
                 <span class="custom-radio">
-                  <label for="Custom">Custom</label>
-                  <input type="radio" class="radio-button" value="3" name="sex">
+                  <label for="Custom" id="customGender">Custom</label>
+                  <input type="radio" class="radio-button" value="Custom" name="sex" onclick="getGenderHandler('Custom')">
                 </span>
               </div>
               </div>

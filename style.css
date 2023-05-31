@@ -192,3 +192,29 @@ body {
     height: 15px;
     margin-top: 5px;
 }
+
+/* Media Queries */
+
+/* For Tablet Devices */
+
+@media screen and (max-width: 799px){
+    .main{
+        width: 500px !important;
+        margin: 300px auto !important;
+        margin: 150px auto !important;
+    }
+
+    .facebook{
+        width: 400px !important;
+    }
+
+    .login-box{
+        width: 200px !important;
+        margin-left: 20px;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    
+  }
